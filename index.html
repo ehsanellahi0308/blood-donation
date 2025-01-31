@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        
+        <h1>Donate Blood, Save Lives</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="https://www.instagram.com/ehsanellahi78/">instagram</a></li>
+                <li><a href="#">Donate</a></li>
+                <li><a href="https://www.facebook.com/EhsanEllahi78">Contact Facebook</a></li>
+            </ul>
+        </nav>
+     <div class="search-container">
+        <h3>Search by Blood Group:</h3>
+        <input type="text" id="searchInput" placeholder="Search by Blood Group..." onkeyup="searchData()">
+        <button onclick="searchData()">Search</button>
+    </div>
+    <div id="searchResults"></div>
+        
+        
+    </header>
+
+    <section class="hero">
+        <h2>Your Blood Can Save Lives</h2>
+        <p>Join us in the mission of saving lives by donating blood today!</p>
+        <a href="#" class="btn">Donate Now</a>
+    </section>
+
+    <section class="info">
+        <div class="box">
+            <h3>Why Donate?</h3>
+            <p>Blood donation helps save millions of lives worldwide.</p>
+        </div>
+        <div class="box">
+            <h3>Who Can Donate?</h3>
+            <p>A person above 18 years of age can donate blood.</p>
+        </div>
+        <div class="box">
+            <h3>How to Donate?</h3>
+            <p>Find a blood bank near you and schedule a donation.</p>
+        </div>
+    </section>
+
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="homeAddress">Home Address:</label>
+            <textarea id="homeAddress" name="homeAddress" rows="4" required></textarea>
+
+            <label for="bloodGroup">Blood Group:</label>
+            <select id="bloodGroup" name="bloodGroup" required>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+
+            <button type="submit">Save Data</button>
+        </form>
+    </div>
+
+     
+
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
